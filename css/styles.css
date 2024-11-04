@@ -1,0 +1,108 @@
+/* css/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px 20px;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    position: relative;
+    min-height: 70px;
+}
+
+.ecoimpacto {
+    color: rgba(0, 100, 0, 1);
+    font-size: 24px;
+    position: absolute;
+    top: 19px;
+    left: 43px;
+}
+
+.menu-container {
+    display: flex;
+        /* Exibe os itens do menu em linha */
+        position: absolute;
+        /* Permite posicionar o contêiner no header */
+        right: 60px;
+        /* Define a posição do contêiner */
+        top: 25px;
+        /* Adiciona 25px de distância do topo */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Distancia entre "Quem somos" e "Importância"*/
+    padding: 0;
+    /*margin-left: auto;*/
+}
+
+.menu li a {
+    text-decoration: none;
+    color:rgba(99, 153, 140, 1);
+    position: relative;
+}
+
+.menu li {
+    position: relative;
+}
+
+/* Organizar logo e textos lado a lado */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centraliza o conteúdo da seção na página */
+    padding: 20px;
+    text-align: left;
+    /* Alinha o texto à esquerda */
+}
+
+.logo img {
+    width: 320px;
+    /* Largura da logo */
+    height: 320px;
+    /* Altura da logo */
+    margin-right: 20px;
+    /* Espaço entre a logo e o texto */
+}
+
+.titulo-texto h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.titulo-texto p {
+    max-width: 600px;
+    /* Limita a largura do texto para melhor leitura */
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.informacao {
+    padding: 20px;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.galeria img {
+    width: calc(100% / 6 - 10px);
+    max-width: 150px;
+}
