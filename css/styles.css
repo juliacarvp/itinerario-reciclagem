@@ -1,108 +1,112 @@
-/* css/styles.css */
-
+/* Definições gerais de estilo */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para o corpo; trocar se necessário */
+    margin: 0; 
     padding: 0;
 }
 
+/* Estilo do cabeçalho (header) */
 header {
-    background-color: rgba(255, 255, 255, 1);
-    padding: 20px 20px;
-    position: relative;
+    background-color: rgba(255, 255, 255, 1);/* Define fundo branco sólido */
+    padding: 20px 20px;/* Espaçamento interno para dar mais área ao conteúdo */
+    position: relative;/* Permite posicionamento absoluto de elementos filhos */
 }
 
+/* Barra de navegação */
 .navbar {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    position: relative;
-    min-height: 70px;
+    display: flex;/* Usa flexbox para organizar os elementos */
+    justify-content: space-between;/* Alinha o conteúdo da barra de navegação entre as extremidades */
+    align-items: center;/* Alinha os itens verticalmente ao centro */
+    min-height: 70px;/* Define uma altura mínima para a barra */
 }
 
+/* Estilo para o título 'EcoImpacto' no cabeçalho */
 .ecoimpacto {
-    color: rgba(0, 100, 0, 1);
+    color: rgba(0, 100, 0, 1);/* Define o verde do título */
     font-size: 24px;
-    position: absolute;
-    top: 19px;
-    left: 43px;
 }
 
+/* Contêiner do menu de navegação */
 .menu-container {
-    display: flex;
-        /* Exibe os itens do menu em linha */
-        position: absolute;
-        /* Permite posicionar o contêiner no header */
-        right: 60px;
-        /* Define a posição do contêiner */
-        top: 25px;
-        /* Adiciona 25px de distância do topo */
+    display: flex;/* Mantém os itens de menu em linha */
+    position: relative;/* Permite posicionamento específico se necessário */
 }
 
+/* Lista de links do menu */
 .menu {
-    list-style: none;
-    display: flex;
-    gap: 30px; /* Distancia entre "Quem somos" e "Importância"*/
+    list-style: none;/* Remove bullets da lista */
+    display: flex;/* Exibe os itens do menu em linha */
+    gap: 30px;/* Distância entre itens do menu */
     padding: 0;
-    /*margin-left: auto;*/
 }
 
+/* Estilo dos links do menu */
 .menu li a {
-    text-decoration: none;
-    color:rgba(99, 153, 140, 1);
-    position: relative;
+    text-decoration: none;/* Remove sublinhado dos links */
+    color: rgba(99, 153, 140, 1);/* Cor personalizada dos links */
 }
 
-.menu li {
-    position: relative;
-}
-
-/* Organizar logo e textos lado a lado */
+/* Seção principal com logo e textos */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Centraliza o conteúdo da seção na página */
-    padding: 20px;
-    text-align: left;
-    /* Alinha o texto à esquerda */
+    display: flex;/* Organiza logo e textos em linha */
+    align-items: center;/* Alinha logo e texto ao centro verticalmente */
+    justify-content: center;/* Centraliza o conteúdo da seção na página */
+    padding: 20px;/* Espaçamento interno */
+    text-align: left;/* Alinha o texto à esquerda */
 }
 
+/* Estilo da logo */
 .logo img {
-    width: 320px;
-    /* Largura da logo */
-    height: 320px;
-    /* Altura da logo */
-    margin-right: 20px;
-    /* Espaço entre a logo e o texto */
+    width: 320px;/* Largura fixa para a logo */
+    max-width: 100%;/* Responsivo: mantém a logo dentro do contêiner */
+    height: auto;/* Altura automática para manter proporção */
+    margin-right: 20px;/* Espaço entre a logo e o texto ao lado */
 }
 
+/* Limite de largura para o texto ao lado da logo */
+.titulo-texto {
+    max-width: 600px;/* Limita largura para facilitar a leitura */
+}
+
+/* Título na seção 'hero' */
 .titulo-texto h1 {
-    font-size: 28px;
-    margin: 0;
+    font-size: 28px;/* Tamanho do título */
+    margin: 0;/* Remove margem padrão */
 }
 
+/* Parágrafo na seção 'hero' */
 .titulo-texto p {
-    max-width: 600px;
-    /* Limita a largura do texto para melhor leitura */
-    font-size: 16px;
-    margin: 10px 0;
+    font-size: 16px;/* Tamanho do texto do parágrafo */
+    margin: 10px 0;/* Espaçamento entre parágrafo e título */
 }
 
+/* Seção de informações com texto centralizado */
 .informacao {
-    padding: 20px;
-    text-align: center;
+    padding: 20px;/* Espaçamento interno */
+    text-align: center;/* Centraliza o texto */
 }
 
+/* Galeria de imagens */
 .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px;
-    justify-content: center;
+    display: flex;/* Usa flexbox para organizar imagens */
+    flex-wrap: wrap;/* Permite que as imagens ocupem múltiplas linhas */
+    gap: 10px;/* Espaço entre as imagens */
+    padding: 20px;/* Espaçamento interno da galeria */
+    justify-content: center;/* Centraliza a galeria */
+    border-top: 2px solid #cccccc; /* Adiciona a linha superior */
+        margin-top: 20px;/* Espaçamento entre a linha e o conteúdo anterior */
 }
 
+/* Estilo para cada imagem na galeria */
 .galeria img {
-    width: calc(100% / 6 - 10px);
-    max-width: 150px;
+    width: calc(100% / 6 - 10px);/* Calcula a largura para seis imagens por linha */
+    max-width: 150px;/* Limite máximo de largura */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .galeria img {
+        width: 100%;/* Imagens ocupam 100% da largura da tela em dispositivos menores */
+        max-width: none;/* Remove limite de largura */
+    }
 }
