@@ -4,6 +4,9 @@ body {
     margin: 0; 
     padding: 0;
 }
+html {
+     scroll-behavior: smooth; /*deixa a rolagem mais fluido (lá ele) */
+}
 
 /* Estilo do cabeçalho (header) */
 header {
@@ -102,6 +105,97 @@ header {
     width: calc(100% / 6 - 10px);/* Calcula a largura para seis imagens por linha */
     max-width: 150px;/* Limite máximo de largura */
 }
+
+.sobre-nos {
+    border-bottom: 2px solid #cccccc;/* Adiciona a linha superior */
+    margin-top: 40px;
+    margin-bottom: 20px;/* Espaçamento entre a linha e o conteúdo anterior */
+    text-align: left;
+}
+
+.sobre-nos h2 {
+    color: rgba(0, 100, 0, 1);/* Cor verde */
+    text-align: center;/* Centraliza o título */
+    font-size: 32px;/* Ajuste o tamanho conforme desejado */
+
+}
+
+.sobre-nos p,ul {
+    text-align: justify;/* Alinha o texto com justificação */
+    margin: 0 auto;/* Centraliza o parágrafo na página */
+    margin-bottom: 40px;
+    font-size: 16px;
+    max-width: 800px;/* Limita a largura para melhorar a legibilidade */
+}
+
+.sobre-nos ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.sobre-nos li {
+    margin-bottom: 8px;
+}
+
+.importancia {
+    border-bottom: 2px solid #cccccc; /* Adiciona a linha superior */
+    margin-top: 40px;
+    margin-bottom: 20px; /* Espaçamento entre a linha e o conteúdo anterior */
+}
+
+.importancia h2 {
+    color: rgba(0, 100, 0, 1); /* Cor verde */
+    text-align: center; /* Centraliza o título */
+    font-size: 32px; /* Ajuste o tamanho conforme desejado */
+}
+
+.importancia p {
+    text-align: justify; /* Alinha o texto com justificação */
+    margin: 0 auto; /* Centraliza o parágrafo na página */
+    margin-bottom: 40px;
+    font-size: 16px;
+    max-width: 800px; /* Limita a largura para melhorar a legibilidade */
+}
+
+.projetos h2 {
+    color: rgba(0, 100, 0, 1);/* Cor verde */
+    text-align: center;/* Centraliza o título */
+    font-size: 32px;/* Ajuste o tamanho conforme desejado */
+}
+
+.projetos p {
+    text-align: justify;/* Alinha o texto com justificação */
+    margin: 0 auto;/* Centraliza o parágrafo na página */
+    margin-bottom: 40px;
+    font-size: 16px;
+    max-width: 800px;/* Limita a largura para melhorar a legibilidade */
+}
+
+.projetos iframe {
+    display: block;/* Transforma o iframe em um bloco */
+    margin: 0 auto;/* Centraliza o iframe horizontalmente */
+    margin-bottom: 20px;
+}
+
+.projetos mark {
+    background-color: transparent;/* Remove o fundo amarelo */
+        color: rgba(0, 100, 0, 1);/* Define o texto em verde */
+}
+
+.imagens-reciclados {
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);/* Cria duas colunas */
+        gap: 10px;/* Espaço entre as imagens */
+        max-width: 800px;/* Define uma largura máxima para centralizar */
+        margin: 0 auto;/* Centraliza a galeria */
+}
+
+.imagens-reciclados img {
+    width: 100%;
+        height: auto;
+}
+
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
