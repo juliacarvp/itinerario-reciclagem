@@ -1,0 +1,521 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Cabeçalho com Navegação */
+header {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    top: 0;
+    padding: 1.1em 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 35px;
+    height: 35px;
+    margin-right: 0.7em;
+}
+
+header .logo h1 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(90deg, #2e8b57, #4CAF50);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent; 
+    margin-right: 40px;
+}
+
+header ul {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+}
+
+header ul li a {
+    color: #414141;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8em;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #2e8b57;
+}
+
+/* Introdução */
+section#intro {
+    width: 100%;
+    height: 90vh;
+    background-image: url('../images/background5.jpg');    
+    background-size: cover;
+    background-position: center;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+}
+
+section#intro h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #fff;
+}
+
+section#intro p {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+
+section#intro span {
+    color: #fff;
+    background-color: #2e8b57;
+}
+
+/* Seção Sobre o Projeto */
+section#sobre {
+    background-color: #f4f4f4;
+    padding: 4em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#sobre h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2e8b57;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+section#sobre p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+section#sobre img {
+    width: 135px;
+    height: 135px;
+    margin-top: 30px;
+}
+
+/* Seção Importancia */
+#importancia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em 2em;
+}
+
+#importancia .conteudo-texto {
+    flex: 1;
+    padding-right: 2em;
+}
+
+#importancia h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0.2em;
+}
+
+#importancia hr {
+    width: 50px;
+    height: 2px;
+    background-color: #2e8b57;
+    border: none;
+    margin: 1em 0;
+}
+
+#importancia p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #414141;
+}
+
+/* Imagem */
+#importancia .imagem {
+    flex: 1;
+    max-width: 350px;
+}
+
+#importancia img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilo da Seção Materiais Recicláveis */
+section#materiais {
+    max-width: 1000px;
+    margin: 2em auto;
+    border-radius: 10px;
+    padding: 0 2em;
+}
+
+section#materiais h2 {
+    font-size: 2em;
+    color: #2e8b57;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+section#materiais p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+/* Lista de Materiais */
+section#materiais ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#materiais ul li {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+/* Galeria de Materiais Recicláveis */
+.galeria {
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.galeria .svg-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.svg-subcontainer {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.svg-subcontainer:hover {
+    transform: scale(1.1);
+}
+
+.svg-subcontainer svg {
+    width: 100px;
+    height: 100px;
+}
+
+.svg-text {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Reciclagem em casa */
+#casa {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3em 2em;
+    border: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+    flex-direction: row;
+}
+
+#casa .conteudo-texto {
+    flex: 1;
+}
+
+#casa h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+#casa p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #414141;
+    margin-bottom: 1em;
+}
+
+#casa .imagem {
+    flex: 1;
+    max-width: 500px;
+}
+
+#casa img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+/* Upcycling */
+#upcycling {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+#upcycling h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2e8b57;
+    margin-bottom: 1em;
+}
+
+#upcycling p {
+    font-size: 1em;
+    color: #414141;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+#upcycling .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+#upcycling .gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#upcycling .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo seção de Canais do YouTube */
+#youtube {
+    max-width: 1000px;
+    margin: 2em auto;
+    border-radius: 10px;
+    padding: 0 2em;
+}
+
+#youtube h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#youtube p {
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#youtube p strong {
+    color: #2e8b57;
+}
+
+.youtube-videos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.youtube-videos iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 20px; 
+    font-family: Arial, sans-serif; 
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+.animated-text {
+    opacity: 0;
+    transform: translateY(20px); /* Começa um pouco abaixo */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Aparecimento e movimento suave */
+}
+
+.animated-text.visible {
+    opacity: 1;
+    transform: translateY(0); /* Desliza para a posição original */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Cabeçalho */
+    header nav {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 0.5em;
+        text-align: center;
+    }
+
+    header .logo h1 {
+        font-size: 1.2em;
+        margin-right: 0;
+    }
+
+    /* Seção de importancia */
+    #importancia {
+        flex-direction: column;
+        text-align: center;
+        padding: 2em 1em;
+    }
+
+    #importancia .conteudo-texto {
+        padding-right: 0;
+    }
+
+    #importancia h2 {
+        font-size: 1.8em;
+    }
+
+    #importancia p {
+        font-size: 1em;
+    }
+
+    #importancia .imagem {
+        max-width: 55%;
+        margin-top: 1em;
+    }
+
+    /* Seção de introdução */
+    section#intro {
+        padding-left: 0;
+        padding-right: 2em;
+        height: 60vh;
+        align-items: center;
+        text-align: center;
+    }
+
+    section#intro h1 {
+        font-size: 2em;
+    }
+
+    section#intro p {
+        font-size: 1.2em; 
+    }
+
+    /* Seção de casa */
+    #casa {
+        flex-direction: column;
+        padding: 2em;
+        text-align: center;
+    }
+
+    #casa h2 {
+        font-size: 1.8em;
+    }
+
+    #casa p {
+        font-size: 1em;
+    }
+
+    #casa .imagem {
+        max-width: 70%;
+    } 
+
+    /* Upcycling */
+    #upcycling {
+        padding: 2em 1em;
+    }
+
+    #upcycling .gallery img {
+        width: 45%;
+    }
+
+    /* Videos */
+    .youtube-videos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .youtube-videos iframe {
+        width: 100%;
+        max-width: 560px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Seção de introdução */
+    section#intro {
+        padding-left: 0;
+        padding-right: 1em;
+        height: 50vh;
+    }
+
+    section#intro h1 {
+        font-size: 1.6em;
+    }
+
+    section#intro p {
+        font-size: 1em;
+    }
+
+    /* Upcycling */
+    #upcycling .gallery img {
+        width: 100%;
+    }
+}
+
+
